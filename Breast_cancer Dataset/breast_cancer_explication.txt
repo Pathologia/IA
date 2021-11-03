@@ -1,0 +1,14 @@
+Source :
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73002
+
+1280 cancer du sein
+2836 non cancer
+514 autre cancer ou maladie
+
+L'ADN est une molécule composé en gènes. 
+L'ARN est l'expression du gène. Il permet de passer d'un gène à une proteine qui aura un effet sur l'organisme.
+Les miARN ont pour but de réguler l'ARN. C'est à dire qu'ils empechent la formation de la proteine associé à l'ARN. 
+
+Une combinaison de 5 de ces miARN (miR-1246, miR-1307-3p, miR-4634, miR-6861-5p, and miR-6875-5p) permet de détecter le cancer du sein.
+Lorsqu'il n'y a pas de cancer, en effet ces sont miARN sont présente de manière stable dans le sérum (liquide sanguin débarrassé de ses cellules et des proteines de la coagulation).
+Ici, je saurais pas vous dire de quel manière ça diffère mais apparement ça diffère. 
