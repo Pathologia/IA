@@ -11,7 +11,7 @@ import statistics as s
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("/Users/samue/Desktop/PATHOLOGIA/Dev/ia/Breast_cancer Dataset/breast_cancer.csv",";", index_col="ID_REF")
+data = pd.read_csv("./Breast_cancer Dataset/breast_cancer.csv",";", index_col="ID_REF")
 pd.set_option('display.max_columns', None)
 statN=data.describe()
 statC=data.describe(include=['object'])
