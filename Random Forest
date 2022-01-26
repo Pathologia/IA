@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 26 09:32:32 2022
+
+@author: lulu
+"""
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.metrics import recall_score
+from sklearn.model_selection import cross_val_score
+
+
+data = pd.read_csv("./Breast_cancer Dataset/breast_cancer.csv",";", index_col="ID_REF")
+
+
+ToReplace = ['breast cancer','non cancer','benign breast disease', 'prostate disease'] 
+Values = [1, 2, 3, 4]
+data['ETAT'] = data['ETAT'].replace(to_replace=ToReplace, value=Values)
+
+y = data['ETAT']
+x = data.drop('ETAT', axis=1)
+#print(y.value_counts())
+
+#X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(x, y, random_state=1, test_size=0.30)
+
+forest = RandomForestClassifier()
+forest.fit(X_train, y_train)
+
+
+y_pred = forest.predict(X_test)
+
+acc_score = accuracy_score(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+
+
+result = confusion_matrix(y_test, y_pred)
+print("Confusion Matrix :")
+print(result)
+result1 = classification_report(y_test, y_pred, zero_division=0)
+print("Classification Report :")
+print(result1)
+result2 = accuracy_score(y_test, y_pred)
+print("Accuracy: ", result2)
+result3 = recall_score(y_test, y_pred, average='weighted')
+print("Recall :", result3)
+
+
+matrix = confusion_matrix(y_test, y_pred)
+matrix = matrix.astype('float') / matrix.sum(axis=1)[:, np.newaxis]
+
+# Build the plot
+plt.figure(figsize=(16,7))
+sns.set(font_scale=1.4)
+sns.heatmap(matrix, annot=True, annot_kws={'size':10},
+            cmap=plt.cm.Greens, linewidths=0.2)
+
+# Add labels to the plot
+class_names = ['breast cancer','non cancer','benign breast disease', 'prostate disease']
+tick_marks = np.arange(len(class_names))
+tick_marks2 = tick_marks + 0.5
+plt.xticks(tick_marks, class_names, rotation=25)
+plt.yticks(tick_marks2, class_names, rotation=0)
+plt.xlabel('Predicted label')
+plt.ylabel('True label')
+plt.title('Confusion Matrix for Random Forest Model')
+plt.show()
+
+
