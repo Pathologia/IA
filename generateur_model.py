@@ -17,7 +17,7 @@ y=data["ETAT"]
 
 
 
-MLP = MLPClassifier(activation='tanh', solver='lbfgs', hidden_layer_sizes=[5,1])
+MLP = MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=[50,10])
 
 P = Pipeline([('SS', StandardScaler()),
               ('classifieur',MLP)])
