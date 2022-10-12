@@ -21,4 +21,4 @@ Le copier dans C:\Users\votrenom\.kaggle
 
 dataset alzheimer irm : https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images
 
-dataset breast cancer mi arn : https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers?resource=download
+dataset alzheimer tabulaire : https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers?resource=download
