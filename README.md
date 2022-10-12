@@ -22,3 +22,7 @@ Le copier dans C:\Users\votrenom\.kaggle
 dataset alzheimer irm : https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images
 
 dataset alzheimer tabulaire : https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers?resource=download
+
+dataset breast cancer tabulaire : https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73002
+
+dataset breast cancer image : https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images
