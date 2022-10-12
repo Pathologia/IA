@@ -1,4 +1,4 @@
-# IA
+# Instruction installation 
 
 1 / Install Anaconda
 https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe
@@ -16,3 +16,7 @@ Le copier dans C:\Users\votrenom\.kaggle
 
 5 / Run Script .py
 
+
+# Lien des datasets
+
+dataset alzheimer irm : https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images
