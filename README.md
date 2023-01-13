@@ -26,3 +26,10 @@ dataset alzheimer tabulaire : https://www.kaggle.com/datasets/jboysen/mri-and-al
 dataset breast cancer tabulaire : https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73002
 
 dataset breast cancer image : https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images
+
+
+# Lien des notebooks utilisés
+
+notebook alzheimer tabulaire : https://www.kaggle.com/code/hyunseokc/detecting-early-alzheimer-s
+
+notebook breast cancer image : https://github.com/sayakpaul/Breast-Cancer-Detection-using-Deep-Learning/blob/master/Breast_Cancer_Detection.ipynb
