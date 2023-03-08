@@ -78,6 +78,49 @@ The optimizer that I tested : Adagrad, Adam
 
 Il convient de noter qu’il peut y avoir plusieurs versions du modèle **CancerNet**, car les chercheurs en apprentissage profond apportent souvent des modifications aux architectures existantes pour améliorer leur rendement sur des tâches ou des ensembles de données précis.
 
+### Partie test
+Paramètre par défaut :
+Epoch = 40
+Learning_rate = 1e-2
+Batch_size = 32
+
+![results](40_epoch.png)
+
+
+## 1er test 
+Paramètre : 
+Epoch = 10 
+Learning_rate = 1e-2
+Batch_size = 32
+
+![results](10_epoch.png)
+
+
+## 2ème test 
+Paramètre : 
+Epoch = 20 
+Learning_rate = 1e-2
+Batch_size = 32
+
+![results](20_epoch.png)
+
+## 3ème test 
+Paramètre : 
+Epoch = 40 
+Learning_rate = 1e-3
+Batch_size = 32
+
+![results](40_epoch_final.png)
+
+## 4ème test 
+Paramètre : 
+Epoch = 60 
+Learning_rate = 1e-3
+Batch_size = 32
+
+![results](60_epoch.png)
+
+
 ## L'architecture de notre modèle 
 
 (3x3) SepConv, 32
